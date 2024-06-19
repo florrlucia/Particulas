@@ -15,3 +15,7 @@ function setCanvasSize(){
     canvasEl.style.height = window.innerHeight + 'px';
     canvasEl.getContext('2d').scale(2, 2);
 }
+function updateCoords(e){
+    pointerX = e.clientX || e.touches[0].clientX;
+    pointerY = e.clientY || e.touches[0].clientY;
+}
